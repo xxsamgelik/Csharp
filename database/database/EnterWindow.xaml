@@ -1,0 +1,44 @@
+﻿<Window x:Class="database.EnterWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:database"
+        mc:Ignorable="d"
+        Title="EnterWindow" Height="450" Width="800">
+    <Window.Resources>
+        <Style TargetType="TextBox">
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+            <Setter Property="Margin" Value="20 8 20 8" />
+            <Setter Property="Width" Value="350" />
+            <Setter Property="Height" Value="20" />
+        </Style>
+        <Style TargetType="TextBlock">
+            <Setter Property="Margin" Value="10 0 0 0"/>
+        </Style>
+        <Style TargetType="Button">
+            <Setter Property="Margin" Value="20 8 20 8" />
+            <Setter Property="Width" Value="60" />
+            <Setter Property="Height" Value="20" />
+        </Style>
+    </Window.Resources>
+    
+    <StackPanel>
+        <TextBlock>Название дисциплины</TextBlock>
+        <TextBox x:Name="nameTextBox"/>
+        <TextBlock>Фамилия преподователя</TextBlock>
+        <TextBox x:Name="nameTeacherTextBox"/>
+        <TextBlock>Количество студентов</TextBlock>
+        <TextBox x:Name="counterTextBox"/>
+        <TextBlock>Часы лекций</TextBlock>
+        <TextBox x:Name="hoursLectionTextBox"/>
+        <TextBlock>Часы практики</TextBlock>
+        <TextBox x:Name="hooursPracticTextBox"/>
+        <TextBlock>Наличие курсовой</TextBlock>
+        <TextBox x:Name="courseTextBox"/>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+            <Button x:Name="Ok" Click="Ok_Click" Content="OK"/>
+            <Button x:Name="Cancel" Click="Cancel_Click" Content="Cancel"/>
+        </StackPanel>
+    </StackPanel>
+</Window>

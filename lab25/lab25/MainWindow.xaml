@@ -1,0 +1,64 @@
+﻿<Window x:Class="lab25.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:lab25"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="672" Width="400">
+    <Grid HorizontalAlignment="Center" Width="400" Height="653" VerticalAlignment="Top">
+        <Label HorizontalContentAlignment="Center" Foreground="#FF644E26" FontSize="11" Margin="150,0,162,396">ИГРЫ</Label>
+        <TextBlock Margin="68,44,80,319" TextWrapping="Wrap" TextAlignment="Center">
+    <Run FontWeight="Bold">«КЕ-Е-ЕВИ-И-ИН!!!» — «А-А-А-А!!!»</Run>
+    <Run>Ультимативный новогодний тест по фильму «Один дома». Ультимативнее некуда!</Run>
+        </TextBlock>
+        <Label Margin="152,120,152,497" Foreground="gray" FontSize="8">11:52, 1 января 2022</Label>
+        <TextBlock Margin="22,161,22,95" TextWrapping="Wrap">
+    <Run>Как говорил Отто фон Бисмарк, у Нового года в России есть два союзника: мандарины и «Один дома» с Маколеем Калкиным. Хорошо, есть еще «Гарри Поттер». И «Шрек». И «Ирония судьбы». Ладно, союзников много! Но фильм с Калкиным — один из самых надежных. Вкратце: восьмилетний Кевин Маккалистер накануне Рождества поссорился с семьей и пожелал, чтобы она исчезла. Так он остался совсем один — в огромном доме, который пытаются ограбить бандиты Гарри и Марв. Вы точно знаете эту историю наизусть. Вернее, думаете, что знаете. Запасайтесь терпением и попкорном,  </Run>
+    <Run FontWeight="Bold">вас ждут 20 каверзных вопросов.</Run>
+    <Run>Узнаем, можно ли оставить вас одних дома!</Run>
+        </TextBlock>
+        <Button Content="ПРОЙТИ ТЕСТ" Margin="22,380,22,239" FontSize="10" Click="Button_Click_1">
+            <Button.Foreground>
+                <SolidColorBrush Color="White"/>
+            </Button.Foreground>
+            <Button.BorderThickness>
+                <Thickness>1</Thickness>
+            </Button.BorderThickness>
+            <Button.Background>
+                <SolidColorBrush Color="#FF644E26"/>
+            </Button.Background>
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border CornerRadius="5" BorderBrush="{TemplateBinding BorderBrush}"
+                    BorderThickness="{TemplateBinding BorderThickness}"
+                    Background="{TemplateBinding Background}">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+            <Button.Style>
+                <Style TargetType="{x:Type Button}">
+                    <Setter Property="Background" Value="#FF644E26" />
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="{x:Type Button}">
+                                <Border CornerRadius="5" Background="{TemplateBinding Background}">
+                                    <ContentPresenter Margin="2" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                </Border>
+                                <ControlTemplate.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter Property="Background" Value="#FF876543" />
+                                    </Trigger>
+                                </ControlTemplate.Triggers>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </Button.Style>
+        </Button>
+
+
+        <Label Margin="122,428,122,198" Foreground="gray" FontSize="8">Фотография в анонсе: ddp / Vida Press</Label>
+    </Grid>
+</Window>

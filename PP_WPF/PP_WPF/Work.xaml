@@ -1,0 +1,16 @@
+﻿<Window x:Class="PP_WPF.Work"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PP_WPF"
+        mc:Ignorable="d"
+        Title="Work" Height="450" Width="800">
+    <Grid>
+        <Label Content="Length : " HorizontalAlignment="Left" Margin="314,167,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.551,0.356" Name="textLenght" FontSize="30"/>
+        <Label Content="Square : " HorizontalAlignment="Left" Margin="314,236,0,0" VerticalAlignment="Top" Name="textSquare" FontSize="30"/>
+        <Label FontSize="30" Name="text1">
+        </Label>
+
+    </Grid>
+</Window>
